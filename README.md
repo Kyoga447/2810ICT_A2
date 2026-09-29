@@ -18,7 +18,17 @@ Sample usage dataset (CSV format)
 
 ### Linux/MacOS
 
+#### Running the code
+
 1. `python -m venv .venv`
 2. `source .venv/bin/activate`
 3. `pip install -r requirements.txt`
 4. `./main.py`
+
+#### Running the testing framework
+
+1. After you have installed all of the required packages, you run `pytest` to see the test results
+2. For more a more verbose output and you'd like to see the specific tests ran, run `pytest -v`
+3. To generate the coverage report, run `pytest --cov --cov-report html`
+4. To generate testing reports run `pytest --html report.html` or to generate 
+a report of a report of a specific test, run `pytest test_flat.py --html flat.html`
